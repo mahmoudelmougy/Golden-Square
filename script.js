@@ -27,25 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    fetch(this.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.ok) {
-            alert('تم إرسال بياناتك بنجاح!');
-        } else {
-            alert('حدث خطأ ما يرجى إعادة المحاولة');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-});
+// document.getElementById('contactForm').addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     const formData = new FormData(this);
+//     fetch(this.action, {
+//         method: 'POST',
+//         body: formData,
+//         headers: {
+//             'Accept': 'application/json'
+//         }
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         if (data.ok) {
+//             alert('تم إرسال بياناتك بنجاح!');
+//         } else {
+//             alert('حدث خطأ ما يرجى إعادة المحاولة');
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+// });
