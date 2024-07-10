@@ -278,5 +278,6 @@ text-align: start;
     .slide-text{
         font-size: 18px;
         text-align: center;
+        padding-left: 20px;
     }
 }
